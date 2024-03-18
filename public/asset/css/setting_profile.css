@@ -1,0 +1,44 @@
+#mainAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#avatar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Canh giữ hình ảnh ở giữa */
+    height: 150px;
+    width: 150px;
+    border: 3px solid #0af;
+    border-radius: 50%;
+    transition: background ease-out 200ms;
+}
+
+#preview {
+    position: relative;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#upload-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #45a;
+    box-shadow: 0px 3px 5px -1px rgba(111, 90, 90, 0.2),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    transition: background-color ease-out 120ms;
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+}
+
+#upload-button:hover {
+    background-color: #f2277e;
+}
